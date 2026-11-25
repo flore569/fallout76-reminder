@@ -1,7 +1,7 @@
 import requests
 import os
 
-WEBHOOK_URL = os.environ["https://discord.com/api/webhooks/1574806032578773163/NHM0-Dymv_GzzTL3D6cwFbTcy0lSS_qVUW7iH7rdcYYWyBfejHalgVyGrMBXoqb0dA2x"]
+WEBHOOK_URL = os.environ["DISCORD_WEBHOOK"]
 
 ROLE_ID = "877576271201206272"
 
