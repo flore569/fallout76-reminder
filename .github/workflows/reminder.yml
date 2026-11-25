@@ -2,8 +2,8 @@ name: Fallout76 Reminder
 
 on:
   schedule:
-    # 日本時間 水曜日00:00
-    - cron: '0 15 * * 2'
+    # 日本時間 水曜日06:00
+    - cron: '0 21 * * 2'
 
   workflow_dispatch:
 
