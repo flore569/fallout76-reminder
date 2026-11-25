@@ -3,7 +3,7 @@ import os
 
 WEBHOOK_URL = os.environ["DISCORD_WEBHOOK"]
 
-ROLE_ID = "877576271201206272"
+ROLE_ID = "1521486913620672542"
 
 message = f"""<@&{ROLE_ID}>
 
