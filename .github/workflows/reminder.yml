@@ -1,0 +1,26 @@
+name: Fallout76 Reminder
+
+on:
+  schedule:
+    # 日本時間 水曜日00:00
+    - cron: '0 15 * * 2'
+
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install requests
+
+      - name: Send Reminder
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: python send_reminder.py
