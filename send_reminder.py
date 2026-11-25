@@ -18,7 +18,7 @@ requests.post(
     json={
         "content": message,
         "allowed_mentions": {
-            "parse": ["roles"]
+            "roles": [ROLE_ID]
         }
     }
 )
